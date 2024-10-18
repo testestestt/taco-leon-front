@@ -1,9 +1,55 @@
 @mixin body-text{
     font-family: $font-body;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: $body-font-size;
+    font-weight: 500 ;
+    line-height: $body-line-height;
+    letter-spacing: $body-letter-spacing;
 }
 
 .body-text, p{
     @include body-text;
+}
+
+@mixin h1{
+    font-family: $font-heading;
+    font-size: $h1-font-size;
+    font-weight: 400;
+}
+
+h1, .h1{
+    @include h1;
+}
+
+@mixin h2{
+    font-family: $font-heading;
+    font-size: $h2-font-size;
+    font-weight: 400;
+}
+
+h2, .h2{
+    @include h2;
+}
+
+@mixin  h3{
+    font-family: $font-subheading;
+    font-size: $h3-font-size;
+    font-weight: 400;
+    line-height: $subheading-line-height;
+    letter-spacing: $subheading-letter-spacing;
+}
+
+h3, .h3{
+    @include h3;
+}
+
+.yellow-text{
+    color: $yellow;
+}
+
+.lightyellow-text{
+    color: $lightyellow;
+}
+
+.brown-text{
+    color: $darkbrown;
 }

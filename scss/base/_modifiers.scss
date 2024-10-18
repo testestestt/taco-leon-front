@@ -1,3 +1,97 @@
 .vh-100{
     height: 100vh;
 }
+
+.btn {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 9px 9px 8.5px;
+    // transition: background-color 0.5s $bezier, color 0.5s $bezier, border-color 0.5s $bezier;
+
+    @include media-breakpoint-up(md) {
+        padding: 15px 20px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 20px 30px;
+
+    }
+}
+
+
+@media (min-width: 768px) {
+    .gap-md-20 {
+        gap: 20px;
+    }
+
+    .pt-md-16{
+        padding-top: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .gap-lg-20 {
+        gap: 20px;
+    }
+
+    .pt-lg-16 {
+        padding-top: 16px;
+    }
+}
+
+ul {
+    list-style: none; 
+}
+
+.hero-container {
+    background-color: $darkbrown;
+    @include media-breakpoint-up(sm) {
+        height: 60vh; 
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 70vh; 
+        // padding-top: 30vh;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 75vh;
+        // padding-top: 37.5vh;
+    }
+}
+
+.hero-title {
+    font-size: 55px;
+}
+
+.paquetes-btn{
+    background-color: $yellow;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.general-container {
+    border-radius: 30px;
+}
+
+.paquete-container {
+    background-color: $lightyellow;
+    padding: 40px 30px;
+}
+
+.yellow-bg {
+    background-color: $yellow;
+}
+
+.paquete-precio {
+    border-radius: 10px;
+}
+
+.paquete-select-btn {
+    width: 64px;
+    height: 64px;
+    padding: 20px !important;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
