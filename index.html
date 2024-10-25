@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.default.min.css" />
     <link rel="icon" href="./test.ico">
     <title>Taco Leon Home</title>
 </head>
@@ -464,8 +464,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row justify-content-center pt-md-30">
+                        <div class="col-md-2">
+                            <div class="">
+                                <div class="swiper-pagination"></div> 
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-pagination" style="height: 100px;"></div> 
                 <!-- No aparece el pagination -->
             </div>
         </section>
@@ -481,129 +488,95 @@
                 </div>
             </div>
             <div class="container-fluid lightyellow-bg px-15 px-md-30 px-lg-50 overflow-hidden pb-120 z-index--1">
-                <div class="swiperTestimonios pb-md-40 pb-lg-50" id="swiper-testimonios-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slide-testimonio position">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
-                                    </div>
-                                    <div class="col-6">
-                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
-                                    </div>
+                <div class="row pb-lg-50 pb-md-40">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonio-container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                </div>
+                                <div class="col-6">
+                                    <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                </div>
+                                <div class="col-12">
+                                    <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="slide-testimonio">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
-                                    </div>
-                                    <div class="col-6">
-                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonio-container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                </div>
+                                <div class="col-6">
+                                    <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                </div>
+                                <div class="col-12">
+                                    <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="slide-testimonio">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
-                                    </div>
-                                    <div class="col-6">
-                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-md-none d-lg-flex">
+                        <div class="testimonio-container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-testimonio">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
-                                    </div>
-                                    <div class="col-6">
-                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
-                                    </div>
+                                <div class="col-6">
+                                    <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                </div>
+                                <div class="col-12">
+                                    <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiperTestimonios" id="swiper-testimonios-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slide-testimonio">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
-                                    </div>
-                                    <div class="col-6">
-                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
-                                    </div>
+                <div class="row pb-lg-50">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonio-container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                </div>
+                                <div class="col-6">
+                                    <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                </div>
+                                <div class="col-12">
+                                    <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="slide-testimonio">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
-                                    </div>
-                                    <div class="col-6">
-                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonio-container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                </div>
+                                <div class="col-6">
+                                    <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                </div>
+                                <div class="col-12">
+                                    <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="slide-testimonio">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
-                                    </div>
-                                    <div class="col-6">
-                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-md-none d-lg-flex">
+                        <div class="testimonio-container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-testimonio">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
-                                    </div>
-                                    <div class="col-6">
-                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
-                                    </div>
+                                <div class="col-6">
+                                    <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                </div>
+                                <div class="col-12">
+                                    <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
                                 </div>
                             </div>
                         </div>
@@ -624,76 +597,73 @@
                         <p class="pb-40">50% al hacer el contrato y la diferencia en el evento cómo garantía del servicio</p>
                     </div>
                     <div class="col-lg-8">
-                        <form action="your-action-url" method="POST"> <!-- Add your action URL and method here -->
+                        <form action="" method="POST">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-12">
                                     <h3 class="pb-10">Nombre Completo *</h3>
                                 </div>
-                                <div class="col-lg-12">
+                                <div class="col-12">
                                     <div class="contacto-input">
                                         <input type="text" name="nombre_completo" placeholder="Juan Alfonso" class="form-contacto" required />
                                     </div>
                                 </div>
-                                <div class="col-lg-12">
+                                <div class="col-12">
                                     <h3 class="pt-30 pb-10">Email *</h3>
                                 </div>
-                                <div class="col-lg-12">
+                                <div class="col-12">
                                     <div class="contacto-input">
                                         <input type="email" name="email" placeholder="juan@mail.com" class="form-contacto" required />
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="col-lg-12">
+                                <div class="col-6">
+                                    <div class="col-12">
                                         <h3 class="pt-30 pb-10">Teléfono *</h3>
                                     </div>
-                                    <div class="col-lg-12">
+                                    <div class="col-12">
                                         <div class="contacto-input">
                                             <input type="tel" name="telefono" placeholder="+524731287373" class="form-contacto" required />
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="col-lg-12">
+                                <div class="col-6">
+                                    <div class="col-12">
                                         <h3 class="pt-30 pb-10">Ciudad del evento</h3>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <div class="contacto-input">
-                                            <select name="ciudad" class="form-contacto">
-                                                <option selected disabled>Ciudad</option>
-                                                <option value="leon">León</option>
-                                                <option value="irapuato">Irapuato</option>
-                                                <option value="guanajuato">Guanajuato</option>
-                                                <option value="salamanca">Salamanca</option>
-                                                <option value="silao">Silao</option>
-                                                <option value="lagos">Lagos</option>
-                                                <option value="san-pancho">San Pancho</option>
-                                                <option value="purisima">Purísima</option>
-                                            </select>
-                                        </div>
+                                    <div class="col-12">
+                                        <select id="select-ciudad" name="select-ciudad" placeholder="Ciudad" >
+                                            <option value="leon">León</option>
+                                            <option value="irapuato">Irapuato</option>
+                                            <option value="guanajuato">Guanajuato</option>
+                                            <option value="salamanca">Salamanca</option>
+                                            <option value="silao">Silao</option>
+                                            <option value="lagos">Lagos</option>
+                                            <option value="san-pancho">San Pancho</option>
+                                            <option value="purisima">Purísima</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="col-lg-12">
+                                <div class="col-6">
+                                    <div class="col-12">
                                         <h3 class="pt-30 pb-10">Fecha tentativa del evento</h3>
                                     </div>
-                                    <div class="col-lg-12">
+                                    <div class="col-12">
                                         <div class="contacto-input">
-                                            <input type="date" name="fecha_evento" placeholder="DD/MM/YYYY" class="form-contacto" required />
+                                            <input type="date" name="fecha_evento" placeholder="DD/MM/YYYY" class="form-contacto" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="col-lg-12">
+                                <div class="col-6">
+                                    <div class="col-12">
                                         <h3 class="pt-30 pb-10">Número de personas</h3>
                                     </div>
-                                    <div class="col-lg-12">
+                                    <div class="col-12">
                                         <div class="contacto-input">
-                                            <input type="number" name="numero_personas" placeholder="25 personas" class="form-contacto" required />
+                                            <input type="number" name="numero_personas" placeholder="25 personas" class="form-contacto" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12 d-flex justify-content-center pt-50 pb-120">
+                            <div class="col-12 d-flex justify-content-center pt-50 pb-120">
                                 <button type="submit" class="btn lightyellow-text brown-container">Enviar</button> 
                             </div>
                         </form>
@@ -707,6 +677,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
     <!-- MAIN JS -->
     <script src="./js/app.js"></script>
     <script src="./js/swipper.js"></script>
@@ -714,7 +685,6 @@
 </html>
 
 <!-- asdas
-el swiper se sobrepone al header
 video 
 ciudades
 

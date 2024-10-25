@@ -6,6 +6,9 @@ $(function() {
       nextEl: '.button-next',
       prevEl: '.button-previous',
     },
+    pagination: {
+      el: '.swiper-pagination',
+    },
     breakpoints: {      
       0: {
         slidesPerView: 1,
