@@ -33,6 +33,7 @@ $(function() {
     breakpoints: {      
       0: {
         slidesPerView: 1,
+        
         spaceBetween: 30,
       },
       768: {

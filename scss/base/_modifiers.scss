@@ -215,3 +215,34 @@ ul {
     background-color: $yellow;
     border-radius: 10px;
 }
+
+.contacto-input {
+    border-radius: 10px;
+    background-color: $lightyellow;
+    padding: 20px 30px;
+    width: 100%;
+    color: #000000;
+}
+
+.contacto-input select.form-contacto {
+    width: 100%;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    appearance: none;
+}
+
+.contacto-input input::placeholder,
+.input[type="date"]::placeholder,
+.contacto-input select.form-contacto{
+    opacity: 0.2;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.form-contacto {
+    opacity: 1;
+    color: $darkbrown;
+}

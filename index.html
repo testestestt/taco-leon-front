@@ -480,8 +480,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid lightyellow-bg px-15 px-md-30 px-lg-50 overflow-hidden pb-lg-120 z-index--1">
-                <div class="swiperTestimonios pb-md-30" id="swiper-testimonios-container">
+            <div class="container-fluid lightyellow-bg px-15 px-md-30 px-lg-50 overflow-hidden pb-120 z-index--1">
+                <div class="swiperTestimonios pb-md-40 pb-lg-50" id="swiper-testimonios-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slide-testimonio position">
@@ -612,8 +612,93 @@
             </div>
         </section>
         <section id="home-contacto">
-            <div class="container-fluid lightyellow-bg brown-text px-15 px-md-30 px-lg-50 pt-lg-120 pt-md-50">
-
+            <div class="container-fluid brown-text px-15 px-md-30 px-lg-50 pt-lg-120 pt-md-50">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div class="col-lg-2 text-center">
+                        <p class="pb-10">Contactános</p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <h1 class="pb-40">¿Listo para comer con nostros?</h1>
+                    </div>
+                    <div class="col-lg-10 text-center">
+                        <p class="pb-40">50% al hacer el contrato y la diferencia en el evento cómo garantía del servicio</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <form action="your-action-url" method="POST"> <!-- Add your action URL and method here -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3 class="pb-10">Nombre Completo *</h3>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="contacto-input">
+                                        <input type="text" name="nombre_completo" placeholder="Juan Alfonso" class="form-contacto" required />
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <h3 class="pt-30 pb-10">Email *</h3>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="contacto-input">
+                                        <input type="email" name="email" placeholder="juan@mail.com" class="form-contacto" required />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="col-lg-12">
+                                        <h3 class="pt-30 pb-10">Teléfono *</h3>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="contacto-input">
+                                            <input type="tel" name="telefono" placeholder="+524731287373" class="form-contacto" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="col-lg-12">
+                                        <h3 class="pt-30 pb-10">Ciudad del evento</h3>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="contacto-input">
+                                            <select name="ciudad" class="form-contacto">
+                                                <option selected disabled>Ciudad</option>
+                                                <option value="leon">León</option>
+                                                <option value="irapuato">Irapuato</option>
+                                                <option value="guanajuato">Guanajuato</option>
+                                                <option value="salamanca">Salamanca</option>
+                                                <option value="silao">Silao</option>
+                                                <option value="lagos">Lagos</option>
+                                                <option value="san-pancho">San Pancho</option>
+                                                <option value="purisima">Purísima</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="col-lg-12">
+                                        <h3 class="pt-30 pb-10">Fecha tentativa del evento</h3>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="contacto-input">
+                                            <input type="date" name="fecha_evento" placeholder="DD/MM/YYYY" class="form-contacto" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="col-lg-12">
+                                        <h3 class="pt-30 pb-10">Número de personas</h3>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="contacto-input">
+                                            <input type="number" name="numero_personas" placeholder="25 personas" class="form-contacto" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 d-flex justify-content-center pt-50 pb-120">
+                                <button type="submit" class="btn lightyellow-text brown-container">Enviar</button> 
+                            </div>
+                        </form>
+                    </div>                    
+                </div>
             </div>
         </section>
     </main>
