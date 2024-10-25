@@ -7,6 +7,7 @@
     align-items: center;
     border-radius: 15px;
     padding: 9px 9px 8.5px;
+    text-decoration: none;
     // transition: background-color 0.5s $bezier, color 0.5s $bezier, border-color 0.5s $bezier;
 
     @include media-breakpoint-up(md) {
@@ -19,6 +20,17 @@
     }
 }
 
+.row-gap-30 {
+    row-gap: 30px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
 
 @media (min-width: 768px) {
     .gap-md-20 {
@@ -35,6 +47,7 @@
         gap: 20px;
     }
 
+
     .pt-lg-16 {
         padding-top: 16px;
     }
@@ -46,18 +59,12 @@ ul {
 
 .hero-container {
     background-color: $darkbrown;
-    @include media-breakpoint-up(sm) {
-        height: 60vh; 
-    }
+
+    height: 60vh; 
 
     @include media-breakpoint-up(md) {
-        height: 70vh; 
+        height: 766px; 
         // padding-top: 30vh;
-    }
-
-    @include media-breakpoint-up(lg) {
-        height: 75vh;
-        // padding-top: 37.5vh;
     }
 }
 
@@ -77,21 +84,134 @@ ul {
 
 .paquete-container {
     background-color: $lightyellow;
-    padding: 40px 30px;
+
+    @include media-breakpoint-up(md) {
+        padding: 30px 20px 20px 20px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 40px 30px;
+    }
+}
+
+
+.brown-container{
+    background-color: $darkbrown;
+}
+
+.paquete-container-md-large{
+    background-color: $lightyellow;
+    padding: 40px 30px 30px ;
 }
 
 .yellow-bg {
     background-color: $yellow;
 }
 
-.paquete-precio {
+.paquete-precio-btn {
     border-radius: 10px;
 }
 
-.paquete-select-btn {
+.paquete-video-btn {
     width: 64px;
     height: 64px;
     padding: 20px !important;
     border-radius: 50px;
     padding: 10px 20px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: $darkbrown;
+    opacity: 0.3;
+}
+
+.guisados-divider {
+    background-color: $lightyellow;
+}
+
+.accordion-expander {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* This is important for overlaying the spans */
+    width: 24px;
+    height: 24px;
+}
+
+.accordion-expander span {
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: $lightyellow;
+    transition: transform 0.3s ease;
+}
+
+.accordion-expander {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.accordion-expander span {
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: $lightyellow;
+    transition: transform 0.3s ease-in;
+}
+
+.accordion-head[aria-expanded="false"] .accordion-expander span:last-child {
+    transform: rotate(0deg); 
+}
+
+.accordion-head[aria-expanded="true"] .accordion-expander span:last-child {
+    transform: rotate(90deg); 
+}
+
+.whatsapp-btn{
+    color: $lightyellow;
+    background-color: $darkbrown;
+    padding: 20px 30px;
+}
+
+.play-btn {
+    width: 105px;
+    height: 105px;
+    border-radius: 100%;
+    background-color: $darkbrown;
+    border: 0px;
+    padding: 0px;
+}
+
+.gallery-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 75%;
+    background-color: $lightyellow;
+    padding: 15px 15px 15px 18px;
+    border: 2px solid $darkbrown;
+}
+
+.lightyellow-bg {
+    background-color: $lightyellow;
+}
+
+.gallery-img {
+    @include media-breakpoint-up(md) {
+        height: 354px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 580px;
+    }
+}
+
+.slide-testimonio {
+    background-color: $yellow;
+    border-radius: 10px;
 }

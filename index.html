@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
     <link rel="icon" href="./test.ico">
     <title>Taco Leon Home</title>
 </head>
@@ -13,65 +14,606 @@
     <main id="page-home">
         <section id="home-hero">
             <div class="container-fluid px-15 px-md-30 px-lg-50 pt-lg-210 pt-md-130">
-                <div class="row justify-content-center vh-80 d-flex ">
-                    <div class="col-lg-12 hero-container general-container px-lg-50 px-md-40 position-relative">
-                        <!-- se sale del borde el container -->
-                        <!-- <img src="assets\hero.png" alt="" srcset=""> -->
-                        <div class="col-lg-6 col-md-9 lightyellow-text position-absolute bottom-0 pb-lg-50 pb-md-40">
-                            <h1 class="hero-title col-lg-10 col-md-9 pb-lg-30 pb-md-20 pt-lg-10 pt-md-30">Tacos para toda ocasión</h1>
-                            <p class="pb-lg-50 pb-md-40 mr-20">Taco León es un negocio familiar dedicado a darles a los mexicanos su comida favorita en esos momentos especiales. Ya sea el taco que te echas los domingos con la abuela, después de un día pesado, o tras la mejor peda de tu vida, siempre está presente.</p>
-                            <button class="btn paquetes-btn ">
-                                Conoce nuestros paquetes
-                            </button>            
+                <div class="hero-container general-container position-relative overflow-hidden">
+                    <img src="assets\hero.png" class="w-100 h-100">
+                    <div class="position-absolute bottom-0 w-100">
+                        <div class="row lightyellow-text">
+                            <div class="col-lg-6 col-md-10">
+                                <h1 class="pl-lg-50 pl-md-40 pb-lg-30 pb-md-20 hero-title ">Tacos para toda ocasión</h1>
+                            </div>
+                            <div class="col-12"></div>
+                            <div class="col-lg-6 col-md-9">
+                                <p class="pl-lg-50 pl-md-40 pb-lg-50 pb-md-40 ">Taco León es un negocio familiar dedicado a darles a los mexicanos su comida favorita en esos momentos especiales. Ya sea el taco que te echas los domingos con la abuela, después de un día pesado, o tras la mejor peda de tu vida, siempre está presente.</p>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="pl-lg-50 pl-md-40 pb-lg-30 pb-md-40">
+                                    <button class="btn paquetes-btn">
+                                        Conoce nuestros paquetes
+                                    </button>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="home-paquetes">
-            <div class="container-fluid px-15 px-md-30 px-lg-50 pt-lg-120 pt-md-100">
-                <div class="row vh-90 d-flex justify-content-center ">
-                    <div class="col-lg-12 d-flex justify-content-center brown-text pb-lg-20">
+            <div class="container-fluid px-15 px-md-30 px-lg-50 pt-120">
+                <div class="row vh-90 d-flex justify-content-center">
+                    <div class="col-lg-12 d-flex justify-content-center brown-text pb-20">
                         <h1>PAQUETES</h1>
                     </div>
-                    <div class="col-lg-8 d-flex flex-column justify-content-center text-center brown-text pb-lg-50">
+                    <div class="col-lg-8 d-flex flex-column justify-content-center text-center brown-text pb-lg-50 pb-md-40">
                         <p>Todos nuestros paquetes están a $70.00 MXN por persona.</p>
                         <p>Incluyen: Salsas en gran variedad, Tortillas, Frijoles, Platos desechables, Vasos desechables, Servilletas desechables, y Personal para servir el buffet. Al finalizar el evento, dejamos lo que quede del servicio.</p>
                     </div>
-
-                        <div class="row vh-90 d-flex gap-lg-20 brown-text">
-                            <div class="col-lg-4 general-container paquete-container">
-                                <div class="d-flex flex-column text-center pb-lg-40">
-                                    <h2>Paquete 1:</h2>
+                    <div class="col-12"></div>
+                    <div class="row row-gap-30 pb-lg-40 pb-md-30">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="general-container paquete-container brown-text d-flex h-100 flex-column">
+                                <div class="d-flex flex-column text-center pb-40">
+                                    <h2 class="pb-10">Paquete 1:</h2>
                                     <p>60 a 99 personas</p>
                                 </div>
-                                <div class="pb-lg-110">
-                                    <p>-Barra de 8 guisados (el cliente elige entre 30 opciones)</p>
+                                <div class="d-flex flex-column">
+                                    <p>-Barra de 8 brown (el cliente elige entre 30 opciones)</p>
                                     <p>-Un vitrolero de 20 litros de agua de sabor (Horchata, Jamaica, Limón, Limón con Chía)</p>
                                     <p>-Mesa de Dulces.</p>
                                     <p>-Dos horas de servicio (todo lo que gusten comer sin límite de alimentos por persona)</p>
                                 </div>
-                                <div class="d-flex">
-                                    <div class="paquete-precio yellow-bg p-10">$4200 MXN - $6300 MXN </div>
-                                    <div class="justify-content-end">
-                                        <button class="btn paquete-select-btn yellow-bg">
-                                            <a href="#">  </a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
-                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                        </svg>
+                                <div class="d-flex mt-auto justify-content-between align-items-end pt-lg-70 pt-md-30">
+                                    <a href="#" class="text-decoration-none">
+                                        <button class="paquete-precio-btn yellow-bg p-10">
+                                            $4200 MXN - $6300 MXN 
+                                        </button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn paquete-video-btn yellow-bg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
                                         </button>    
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="general-container paquete-container brown-text d-flex h-100 flex-column">
+                                <div class="d-flex flex-column text-center pb-40">
+                                    <h2 class="pb-10">Paquete 2:</h2>
+                                    <p>100 a 149 personas</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <p>-Barra de 10 brown (el cliente elige entre 30 opciones)</p>
+                                    <p>-Dos vitroleros de 20 Lts. cada uno (Horchata, Jamaica, Limón, Limón con Chía)</p>
+                                    <p>-Mesa de Dulces</p>
+                                    <p>-Fuente de Chocolate</p>
+                                    <p>-Dos horas de servicio (todo lo que gusten comer sin límite de alimentos por persona)</p>
+                                </div>
+                                <div class="d-flex mt-auto justify-content-between align-items-end pt-lg-70 pt-md-30">
+                                    <a href="#" class="text-decoration-none">
+                                        <button class="paquete-precio-btn yellow-bg p-10">
+                                            $7000 MXN - $10430 MXN
+                                        </button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn paquete-video-btn yellow-bg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
+                                        </button>    
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-4 col-md-6">
+                            <div class="general-container paquete-container brown-text d-flex h-100 flex-column">
+                                <div class="d-flex flex-column text-center pb-40">
+                                    <h2 class="pb-10">Paquete 3:</h2>
+                                    <p>150 a 199 personas</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <p>-Barra de 10 brown (el cliente elige entre 30 opciones).</p>
+                                    <p>-Botana para cada una de las mesas.</p>
+                                    <p>-Dos vitroleros de 20 Lts. cada uno (Horchata, Jamaica, Limón, Limón con Chía)</p>
+                                    <p>-Mesa de Dulces</p>
+                                    <p>-Fuente de Chocolate.</p>
+                                    <p>-Dos horas de servicio (todo lo que gusten comer sin límite de alimentos por persona)</p>
+                                </div>
+                                <div class="d-flex mt-auto justify-content-between align-items-end pt-lg-70 pt-md-30">
+                                    <a href="#" class="text-decoration-none">
+                                        <button class="paquete-precio-btn yellow-bg p-10">
+                                            $4200 MXN - $6300 MXN
+                                        </button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn paquete-video-btn yellow-bg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
+                                        </button>    
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="col-lg-6 col-md-6">
+                            <div class="general-container paquete-container brown-text d-flex h-100 flex-column">
+                                <div class="d-flex flex-column text-center pb-40">
+                                    <h2 class="pb-10">Paquete 4:</h2>
+                                    <p>200 a 249 personas</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <p>-Dos barras de guisados de 10 guisados cada uno (el cliente elige entre 30 opciones)</p>
+                                    <p>-DJ con Audio e iluminación por 5 Horas</p>
+                                    <p>-Cuatro vitroleros de Agua de Sabor (Horchata, Jamaica, Limón, Limón con Chía)</p>
+                                    <p>-Mesa de Dulces</p>
+                                    <p>-Fuente de Chocolate</p>
+                                    <p>-Dos horas y media de servicio (todo lo que gusten comer sin límite de alimentos por persona)</p>
+                                </div>
+                                <div class="d-flex mt-auto justify-content-between align-items-end pt-30">
+                                    <a href="#" class="text-decoration-none">
+                                        <button class="paquete-precio-btn yellow-bg p-10">
+                                            $14000 MXN - $17430 MXN 
+                                        </button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn paquete-video-btn yellow-bg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
+                                        </button>    
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="general-container paquete-container-md-large brown-text d-flex h-100 flex-column">
+                                <div class="d-flex flex-column text-center pb-40">
+                                    <h2 class="pb-10">Paquete 5:</h2>
+                                    <p>250 a 350 personas</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <p>-Dos barras de guisados de 10 guisados cada uno (el cliente elige entre 30 opciones)</p>             
+                                    <p>-DJ con Audio e Iluminación por 5 horas ó Una Hora de Mariachi</p>        
+                                    <p>-6 vitroleros de Agua de Sabor (Horchata, Jamaica, Limón, Limón con Chía)</p>          
+                                    <p>-Dos mesas de Dulces </p>           
+                                    <p>-Fuente de Chocolate. </p>
+                                    <p>-Dos horas y media de servicio (todo lo que gusten comer sin límite de alimentos por persona)</p>
+                                </div>
+                                <div class="d-flex mt-auto justify-content-between align-items-end pt-80">
+                                    <!-- es de 77 pb -->
+                                    <a href="#" class="text-decoration-none">
+                                        <button class="paquete-precio-btn yellow-bg p-10 ">
+                                            $4200 MXN - $6300 MXN 
+                                        </button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn paquete-video-btn yellow-bg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
+                                        </button>    
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center text-center brown-text">
+                        <p>Manejamos paquetes mayores a 2000 personas, siempre y cuando haya previa cotización.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-guisados">
+            <div class="container-fluid px-15 px-md-30 px-lg-50 pt-lg-120 pt-md-120">
+                <div class="brown-container general-container lightyellow-text">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 d-flex flex-column">
+                            <div class="pl-40 pt-40 pb-md-40">
+                                <p class="pb-10 pl-lg-20">Guisados deliciosos</p>
+                                <h1>Conoce nuestros guisados</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10 col-md-9 ml-40">
+                                    <p class="mt-auto pb-lg-40 pb-md-60">Nos especializamos en guisados que capturan el sabor auténtico de la comida mexicana. Desde el clásico chorizo con papas hasta el pollo deshebrado con mole, nuestra variedad de guisados es tan diversa como la selva misma. Como el león, nuestros platillos destacan por su intensidad y autenticidad, transportándote al corazón de México en cada bocado.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column">
+                            <div id="t-accordion" class="pr-40 pl-40 pt-lg-95">
+                                <div class="item-accordion">
+                                    <a class="accordion-head text-decoration-none" data-bs-toggle="collapse" href="#collapse-1" role="button" aria-expanded="true" aria-controls="collapse-1">
+                                        <div class="d-flex justify-content-between text-decoration-none pt-lg-30 pb-30">
+                                            <h3>01 Sabores Especiales</h3>
+                                            <div class="justify-content-end">
+                                                <div class="accordion-expander">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="collapse active show" id="collapse-1" data-bs-parent="#t-accordion">
+                                        <div class="pb-30">
+                                            <p>-Chicharrón prensado</p>
+                                            <p>-Salchichas al chipotle</p>
+                                            <p>-Salchichas a la mexicana</p>
+                                            <p>-Huevo en salsa roja o verde</p>
+                                            <p>-Papa leonesa al gratín</p>
+                                            <p>-Atún a la mexicana</p>
+                                            <p>-Huevo con nopales</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider guisados-divider"></div>
+                                <div class="item-accordion">
+                                    <a class="accordion-head text-decoration-none" data-bs-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2">
+                                        <div class="d-flex justify-content-between text-decoration-none pt-30 pb-30">
+                                            <h3>02 Guisados de Pollo</h3>
+                                            <div class="justify-content-end">
+                                                <div class="accordion-expander">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                    
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="collapse" id="collapse-2" data-bs-parent="#t-accordion">
+                                        <div class="pb-30">
+                                            <p>-Chicharrón prensado</p>
+                                            <p>-Salchichas al chipotle</p>
+                                            <p>-Salchichas a la mexicana</p>
+                                            <p>-Huevo en salsa roja o verde</p>
+                                            <p>-Papa leonesa al gratín</p>
+                                            <p>-Atún a la mexicana</p>
+                                            <p>-Huevo con nopales</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider guisados-divider"></div>
+                                <div class="item-accordion">
+                                    <a class="accordion-head text-decoration-none" data-bs-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapse-3">
+                                        <div class="d-flex justify-content-between text-decoration-none pt-30 pb-30">
+                                            <h3>03 Guisados de Res y Cerdo</h3>
+                                            <div class="justify-content-end">
+                                                <div class="accordion-expander">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                    
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="collapse" id="collapse-3" data-bs-parent="#t-accordion">
+                                        <div class="pb-30">
+                                            <p>-Chicharrón prensado</p>
+                                            <p>-Salchichas al chipotle</p>
+                                            <p>-Salchichas a la mexicana</p>
+                                            <p>-Huevo en salsa roja o verde</p>
+                                            <p>-Papa leonesa al gratín</p>
+                                            <p>-Atún a la mexicana</p>
+                                            <p>-Huevo con nopales</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider guisados-divider"></div>
+                                <div class="item-accordion">
+                                    <a class="accordion-head text-decoration-none" data-bs-toggle="collapse" href="#collapse-4" role="button" aria-expanded="false" aria-controls="collapse-4">
+                                        <div class="d-flex justify-content-between text-decoration-none pt-30 pb-40">
+                                            <h3>04 Guisados Vegetarianos   </h3>
+                                            <div class="justify-content-end">
+                                                <div class="accordion-expander">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                    
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="collapse" id="collapse-4" data-bs-parent="#t-accordion">
+                                        <div class="pb-30">
+                                            <p>-Chicharrón prensado</p>
+                                            <p>-Salchichas al chipotle</p>
+                                            <p>-Salchichas a la mexicana</p>
+                                            <p>-Huevo en salsa roja o verde</p>
+                                            <p>-Papa leonesa al gratín</p>
+                                            <p>-Atún a la mexicana</p>
+                                            <p>-Huevo con nopales</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 general-container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-ubicaciones">
+            <div class="container-fluid px-15 px-md-90 px-lg-50 pt-lg-120 pt-md-100">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 order-lg-1 order-md-2">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-lg-10 col-md-12 pb-lg-80 pb-md-60">
+                                <div class="general-container position-relative overflow-hidden ">
+                                    <img src="assets\seniora_feliz.jpg" class="w-100 h-100">
 
-                            </div>
-                            <div class="col-lg-4 general-container">
-
+                                </div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-1" >
+                        <div class="row brown-text">
+                            <div class="col-lg-12">
+                                <p class="pt-lg-40 pb-10">Taquizas a Domicilio</p>
+                                <h1 class="pb-30">¡VAMOS A DONDE QUIERAS!</h1>
+                            </div>
+                            <div class="col-lg-4 col-md-5">
+                                <h3>León</h3>
+                                <h3>Irapuato</h3>
+                                <h3>Guanajuato</h3>
+                                <h3>Salamanca</h3>
+                                <h3>Silao</h3>
+                                <h3>Lagos</h3>
+                                <h3>San Pancho</h3>
+                                <h3>Purísima</h3>
+                            </div>
+                            <div class="col-lg-6 col-md-7">
+                                <div class="h-100 d-flex flex-column">
+                                    <p>* Para eventos fuera de León viáticos se cobran aparte.</p>
+                                    <p class="mt-auto">Contáctanos para cualquier duda a nuestro número: </p> 
+                                    <p>+52 477 221 3385</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-7">
+                                <div class="d-flex justify-content-start pt-lg-50 pt-md-40 pb-md-40">
+                                    <button class="btn whatsapp-btn">
+                                        <a href="#" class="text-decoration-none">
+                                            Mandar mensaje a WhatsApp
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid px-15 px-md-30 px-lg-50 pt-lg-120 pt-md-50">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 lightyellow-text pb-30 pb-lg-0">
+                        <div class="general-container brown-container h-100">
+                            <div class="d-flex flex-column h-100">
+                                <p class="pt-40 pb-10 pl-40">¿Dónde estamos?</p>
+                                <h1 class="pl-40 pb-md-60 pr-40">Te lo explica un león</h1>
+                                <div class="d-flex pl-40 mt-auto pb-40 gap-30">
+                                    <p>Facebook</p> <p>Whatsapp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="position-relative overflow-hidden">
+                            <img src="assets\video_placeholder.png" class="w-100 h-100">
+                            <div class="d-flex justify-content-center align-items-center position-absolute top-0 w-100 h-100">
+                                <a href="#">
+                                    <button class="btn play-btn d-flex justify-content-center align-items-center">
+                                        <div class="pl-10">
+                                            <svg width="44" height="52" viewBox="0 0 44 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M43.5228 26.0028L0.0241675 51.619L0.0241697 0.386551L43.5228 26.0028Z" fill="#FFEBBA"/>
+                                            </svg>                                            
+                                        </div>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-galeria">
+            <div class="container-fluid px-15 px-md-30 px-lg-50 pt-lg-120 pt-md-120">
+                <div class="row brown-text">
+                    <div class="col-12 justify-content-start">
+                        <p class="pb-10">Nuestros Clientes</p>
+                    </div>
+                    <div class="col-lg-12"></div>
+                    <div class="col-lg-12 col-md-9">
+                        <div class="row justify-content-between align-items-center pb-lg-50 pb-md-40">
+                            <div class="col-lg-6">
+                                <h1>
+                                    MUCHOS CLIENTES FELICES
+                                </h1>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="d-lg-flex gap-15 justify-content-end d-md-none">
+                                    <button class="btn gallery-btn button-previous">
+                                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.75 9.00005H1.25M1.25 9.00005L9.42742 1.45166M1.25 9.00005L9.42742 16.5484" stroke="#401B0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </button>
+                                    <button class="btn gallery-btn button-next">
+                                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.25 9.00005H20.75M20.75 9.00005L12.5726 1.45166M20.75 9.00005L12.5726 16.5484" stroke="#401B0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid px-15 px-md-30 px-lg-50 overflow-hidden pb-lg-120">
+                <div class="swiperGaleria pb-md-30" id="swiper-gallery-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="general-container position-relative overflow-hidden gallery-img">
+                                <img src="./assets/taquiza1.jpg" class="w-100 h-100">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="general-container position-relative overflow-hidden gallery-img">
+                                <img src="./assets/taquiza2.jpg" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination" style="height: 100px;"></div> 
+                <!-- No aparece el pagination -->
+            </div>
+        </section>
+        <section id="home-testimonios">
+            <div class="container-fluid lightyellow-bg brown-text px-15 px-md-30 px-lg-50 pt-lg-120 pt-md-50">
+                <div class="row brown-text">
+                    <div class="col-lg-12">
+                        <p class="pb-10 pl-md-20">Opiniones Positivas</p>
+                    </div>
+                    <div class="col-lg-6 col-md-11">
+                        <h1 class="pb-50 pl-md-20">TESTIMONIOS SOBRE NUESTRO SABOR</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid lightyellow-bg px-15 px-md-30 px-lg-50 overflow-hidden pb-lg-120 z-index--1">
+                <div class="swiperTestimonios pb-md-30" id="swiper-testimonios-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-testimonio position">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-testimonio">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-testimonio">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-testimonio">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiperTestimonios" id="swiper-testimonios-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-testimonio">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-testimonio">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-testimonio">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-testimonio">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3 class="pl-20 pt-20 pb-40">Juan P.</h3>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="d-flex justify-content-end pr-20 pt-20 pb-40">12/08/22</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="px-20 pb-lg-60 pb-md-50">"Contratamos a Taco León para una fiesta familiar en Irapuato, y fue un éxito total. Los guisados estaban deliciosos y el servicio fue excelente. ¡Definitivamente los recomendaré!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-contacto">
+            <div class="container-fluid lightyellow-bg brown-text px-15 px-md-30 px-lg-50 pt-lg-120 pt-md-50">
+
             </div>
         </section>
     </main>
@@ -79,7 +621,17 @@
     <!-- LIBS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- MAIN JS -->
     <script src="./js/app.js"></script>
+    <script src="./js/swipper.js"></script>
 </body>
 </html>
+
+<!-- asdas
+el swiper se sobrepone al header
+video 
+ciudades
+
+
+asd -->

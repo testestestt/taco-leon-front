@@ -13,6 +13,7 @@
 @mixin h1{
     font-family: $font-heading;
     font-size: $h1-font-size;
+    line-height: $h1-font-size;
     font-weight: 400;
 }
 
@@ -23,6 +24,7 @@ h1, .h1{
 @mixin h2{
     font-family: $font-heading;
     font-size: $h2-font-size;
+    line-height: $h2-font-size;
     font-weight: 400;
 }
 

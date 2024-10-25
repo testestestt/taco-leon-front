@@ -5,12 +5,11 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
     
     .contact-btn{
         color: $lightyellow;
         background-color: $darkbrown;
-        text-decoration: none;
         z-index: 11;
     }
     
@@ -27,7 +26,6 @@ header {
         padding: 21px 16px;
         border: 2px solid $darkbrown; 
         border-radius: 15px; 
-        margin: 12px
     }
 
     .menu-icon {
@@ -67,24 +65,29 @@ header {
         transition: opacity 0.6s cubic-bezier(.23, 1, .32, 1) 0.24s;
         position: absolute;
         z-index: 10;
-        margin: 236px 0 0 12px;
         background-color: $lightyellow;
+        margin-top: 102px;
         border: 2px solid $darkbrown;
         pointer-events: none;
-        display: flex;
-        flex-direction: column;
-        // ul{
-        //     list-style: none;
-        //     .ul-item{
-        //         margin-bottom: 20px;
-        //         display: flex;
-        //         overflow: hidden;
-        //         .ul-link{
-        //             transform: translateY(100%);
-        //             transition: transform 0.6s cubic-bezier(.23, 1, .32, 1);
-        //         }                
-        //     }
-        // }
+        left: 30px;
+        right: 30px;
+        ul{
+            padding: 20px 40px 20px 40px;
+            .ul-item{
+                // margin-bottom: 20px;
+                // display: flex;
+                // overflow: hidden;
+                .ul-link{
+                    // transform: translateY(100%);
+                    // transition: transform 0.6s cubic-bezier(.23, 1, .32, 1);
+                    padding: 20px 0 20px;
+                    display: block;
+                }                
+            }
+        }
+        .ul-divider{
+            padding: 0px;
+        }
         &.show{
             opacity: 1;
             // transition: opacity 0.6s cubic-bezier(.23, 1, .32, 1);
