@@ -5,16 +5,11 @@
 .btn {
     display: flex;
     align-items: center;
-    border-radius: 15px;
-    padding: 9px 9px 8.5px;
+    padding: 15px 10px;
+    border-radius: 10px;
     text-decoration: none;
-    // transition: background-color 0.5s $bezier, color 0.5s $bezier, border-color 0.5s $bezier;
-
     @include media-breakpoint-up(md) {
-        padding: 15px 20px;
-    }
-
-    @include media-breakpoint-up(lg) {
+        border-radius: 15px;
         padding: 20px 30px;
 
     }
@@ -59,12 +54,9 @@ ul {
 
 .hero-container {
     background-color: $darkbrown;
-
-    height: 60vh; 
-
+    height: 560px;
     @include media-breakpoint-up(md) {
         height: 766px; 
-        // padding-top: 30vh;
     }
 }
 
@@ -288,3 +280,43 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     list-style: 19.2px;
 }
 
+
+
+.vineta-container{
+    display: flex;
+    gap: 5px;
+    padding-bottom: 5px;
+    .vineta{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+        &::after{
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: $darkbrown;
+        }
+    }
+    &:last-child{
+        padding-bottom: 0px;
+    }
+}
+
+.flex-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    @include media-breakpoint-up(md){
+        justify-content: start;
+        gap: 20px;
+        
+    }   
+}
+
+.cover{
+    object-fit: cover;
+}

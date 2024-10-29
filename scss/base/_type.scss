@@ -1,9 +1,13 @@
 @mixin body-text{
     font-family: $font-body;
-    font-size: $body-font-size;
-    font-weight: 500 ;
-    line-height: $body-line-height;
-    letter-spacing: $body-letter-spacing;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    @include media-breakpoint-up(md){
+        font-size: 16px;
+        line-height: 19.2px;
+    }
 }
 
 .body-text, p{
@@ -12,9 +16,13 @@
 
 @mixin h1{
     font-family: $font-heading;
-    font-size: $h1-font-size;
-    line-height: $h1-font-size;
     font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    @include media-breakpoint-up(md){
+        font-size: 50px;
+        line-height: 50px;
+    }
 }
 
 h1, .h1{
@@ -23,9 +31,13 @@ h1, .h1{
 
 @mixin h2{
     font-family: $font-heading;
-    font-size: $h2-font-size;
-    line-height: $h2-font-size;
+    font-size: 22px;
+    line-height: 22px;
     font-weight: 400;
+    @include media-breakpoint-up(md){
+        font-size: 30px;
+        line-height: 30px;
+    }
 }
 
 h2, .h2{
@@ -33,11 +45,17 @@ h2, .h2{
 }
 
 @mixin  h3{
-    font-family: $font-subheading;
-    font-size: $h3-font-size;
-    font-weight: 400;
-    line-height: $subheading-line-height;
-    letter-spacing: $subheading-letter-spacing;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    letter-spacing: 0.01em;
+    @include media-breakpoint-up(md){
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 h3, .h3{
