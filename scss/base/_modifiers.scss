@@ -11,7 +11,6 @@
     @include media-breakpoint-up(md) {
         border-radius: 15px;
         padding: 20px 30px;
-
     }
 }
 
@@ -239,11 +238,21 @@ ul {
 }
 
 .contacto-input {
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     background-color: $lightyellow;
-    padding: 20px 30px;
+    padding: 20px 21px;
     width: 100%;
     color: #000000;
+    
+    @include media-breakpoint-up(md) {
+        padding: 20px 20px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 20px 30px;
+    }
 }
 
 .contacto-input input::placeholder,
@@ -258,6 +267,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .form-contacto {
     opacity: 1;
     color: $darkbrown;
+    width: 100%;
+    @include body-text;
 }
 
 
@@ -267,21 +278,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 0 !important;                     
 }
 
+
 .selectize-dropdown {
     border: none !important;                   
     box-shadow: none !important;              
-    padding: 0 !important;                    
+    border-radius: 10px !important;  
 }
 
 .selectize-dropdown-content{
-    max-height: 250px !important;
+    border-radius: 10px !important;
+
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content !important;
+    gap: 20px;
+    padding: 20px 21px;
+    @include media-breakpoint-up(md) {
+        padding: 20px 20px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 20px 30px;
+    }
 }
 
 .selectize-dropdown .selectize-dropdown-content .option {
     color: $darkbrown;
     background-color: $lightyellow !important;
-    padding: 20px 30px;
     @include body-text;
+    line-height: 21.19px !important;
+    padding: 0px !important;
 }
 
 .selectize-control.single .selectize-input, .selectize-dropdown.single {
@@ -292,20 +319,44 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     @include body-text;
     color: $darkbrown;
     margin-top: 10px;
+    
+    @include media-breakpoint-up(lg) {
+        line-height: 21.19px !important;
+
+    }
 }
 
 .selectize-control.single .selectize-input {
     background-image: none !important; 
-    margin: 0 !important; 
-    padding: 20px 30px !important;
+    margin: 0 !important;
+    padding: 20px 21px !important;
     border-radius: 10px;
+    @include media-breakpoint-up(md) {
+        padding: 20px 20px !important;
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 20px 30px !important;
+    }
 }
 
-.selectize-input>input{
-    font-family: 'Roboto';
-    font-size: $body-font-size;
-    font-weight: 500 ;
-    list-style: 19.2px;
+.selectize-control.single .selectize-input:after {
+    transform: translateY(-50%) !important;
+    right: 18px !important;
+    width: 20px !important;
+    height: 12px !important;
+    border-width: 0px !important;
+    margin-top: 0px !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L10 10L19 1' stroke='%23401B0A' stroke-width='2'/%3E%3C/svg%3E%0A") !important;
+    background-repeat: no-repeat !important;
+}
+
+.selectize-control.single {
+    display: flex;
+    flex-direction: column;
+}
+
+#select-ciudad-selectized {
+    height: 0px !important;
 }
 
 
@@ -408,4 +459,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: fit-content;
     display: flex;
     justify-content: center;
+}
+
+.enviar-contact-btn{
+    padding: 15px 92.5px;
+
+    @include media-breakpoint-up(md) {
+        padding: 20px 21px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 20px 30px;
+    }
 }

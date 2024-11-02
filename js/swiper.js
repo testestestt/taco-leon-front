@@ -87,32 +87,33 @@ $(function() {
 });
 
 
-$(function() {
-  const swiperCiudades = new Swiper('#swiper-ciudades-container', {
-    loop: true,
-    lazy: true,
-    autoplay: {
-      delay: 0,             
-      disableOnInteraction: false, 
-      reverseDirection: false,
-    },
-    allowTouchMove: false,
-    breakpoints: {      
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        speed: 15000,
-      },
-      768: {
-        slidesPerView: 1.75,
-        spaceBetween: 153,
-        speed: 11000,
-      },
-      992: {
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        speed: 9000,
-      }
-    }
-  });
-});
+// $(function() {
+//   const swiperCiudades = new Swiper('#swiper-ciudades-container', {
+//     loop: true,
+//     lazy: true,
+//     autoplay: {
+//       delay: 0,             
+//       disableOnInteraction: false, 
+//       reverseDirection: false,
+//     },
+//     allowTouchMove: false,
+//     breakpoints: {      
+//       0: {
+//         slidesPerView: 1,
+//         spaceBetween: 30,
+//         speed: 15000,
+//       },
+//       768: {
+//         slidesPerView: ,
+//         spaceBetween: 153,
+//         speed: 15000,
+//       },
+//       992: {
+//         slidesPerView: 'auto',
+//         spaceBetween: 30,
+//         speed: 3000,
+//       }
+//     }
+//   });
+// });
+
