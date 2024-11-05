@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.default.min.css" />
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
     <link rel="icon" href="./test.ico">
     <title>Taco Leon Home</title>
 </head>
@@ -26,10 +27,12 @@
                                 <p class="px-30 pr-md-0 pl-lg-50 pl-md-40 pb-30 pb-md-40 pb-lg-50">Taco León es un negocio familiar dedicado a darles a los mexicanos su comida favorita en esos momentos especiales. Ya sea el taco que te echas los domingos con la abuela, después de un día pesado, o tras la mejor peda de tu vida, siempre está presente.</p>
                             </div>
                             <div class="col-12">
-                                <div class="px-30 pr-md-0 pl-lg-50 pl-md-40 pb-30 pb-md-40 pb-lg-50">
-                                    <button class="btn paquetes-btn">
-                                        Conoce nuestros paquetes
-                                    </button>
+                                <div class="px-30 pr-md-0 pl-lg-50 pl-md-40 pb-30 pb-md-40 pb-lg-50 ">
+                                    <a href="#home-paquetes" class="text-decoration-none">
+                                        <button class="btn paquetes-btn d-block">
+                                            Conoce nuestros paquetes
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +52,7 @@
                     </div>
                     <div class="col-12"></div>
                 </div>
-                <div class="row row-gap-30 justify-content-center">
+                <div class="row row-gap-30 justify-content-center position-relative">
                     <div class="col-lg-4 col-md-6">
                         <div class="general-container paquete-container brown-text d-flex h-100 flex-column">
                             <div class="d-flex flex-column text-center pb-md-40 pb-30">
@@ -78,7 +81,7 @@
                                 <div class="paquete-precio yellow-bg p-10">
                                     <p>Desde $4200 MXN</p>
                                 </div>
-                                <a href="#">
+                                <a href="#" data-toggle="show" data-target=".video-modal, .toggle-video">
                                     <button class="btn paquete-video-btn yellow-bg">
                                         <svg class="d-none d-md-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
                                             <polygon points="5 3 19 12 5 21 5 3"></polygon>
@@ -86,7 +89,7 @@
                                         <svg class="flex-none d-md-none" width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M14.375 9L0.312499 17.119L0.3125 0.881011L14.375 9Z" fill="#401B0A"/>
                                             </svg>                                                                               
-                                    </button>    
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -123,15 +126,15 @@
                                 <div class="paquete-precio yellow-bg p-10">
                                     <p>Desde $7000 MXN</p>
                                 </div>
-                                <a href="#">
+                                <a href="#" data-toggle="show" data-target=".video-modal, .toggle-video">
                                     <button class="btn paquete-video-btn yellow-bg">
                                         <svg class="d-none d-md-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
                                             <polygon points="5 3 19 12 5 21 5 3"></polygon>
                                         </svg>
                                         <svg class="flex-none d-md-none" width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M14.375 9L0.312499 17.119L0.3125 0.881011L14.375 9Z" fill="#401B0A"/>
-                                            </svg>       
-                                    </button>    
+                                            </svg>                                                                               
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -173,15 +176,15 @@
                                 <div class="paquete-precio yellow-bg p-10">
                                     <p>Desde $10500 MXN</p>
                                 </div>
-                                <a href="#">
+                                <a href="#" data-toggle="show" data-target=".video-modal, .toggle-video">
                                     <button class="btn paquete-video-btn yellow-bg">
                                         <svg class="d-none d-md-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
                                             <polygon points="5 3 19 12 5 21 5 3"></polygon>
                                         </svg>
                                         <svg class="flex-none d-md-none" width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M14.375 9L0.312499 17.119L0.3125 0.881011L14.375 9Z" fill="#401B0A"/>
-                                            </svg>       
-                                    </button>    
+                                            </svg>                                                                               
+                                    </button>
                                 </a>
                             </div>
                             <img src="./assets/chilepng.png" class="chile-img d-none d-lg-flex">
@@ -223,15 +226,15 @@
                                 <div class="paquete-precio yellow-bg p-10">
                                     <p>Desde $14000 MXN</p>
                                 </div>
-                                <a href="#">
+                                <a href="#" data-toggle="show" data-target=".video-modal, .toggle-video">
                                     <button class="btn paquete-video-btn yellow-bg">
                                         <svg class="d-none d-md-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
                                             <polygon points="5 3 19 12 5 21 5 3"></polygon>
                                         </svg>
                                         <svg class="flex-none d-md-none" width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M14.375 9L0.312499 17.119L0.3125 0.881011L14.375 9Z" fill="#401B0A"/>
-                                            </svg>       
-                                    </button>    
+                                            </svg>                                                                               
+                                    </button>
                                 </a>
                             </div>
                             <img src="./assets/limon.png" class="limon-img d-none d-lg-flex">
@@ -275,15 +278,15 @@
                                 <div class="paquete-precio yellow-bg p-10 ">
                                     <p>Desde $17500 MXN</p>
                                 </div>
-                                <a href="#">
+                                <a href="#" data-toggle="show" data-target=".video-modal, .toggle-video">
                                     <button class="btn paquete-video-btn yellow-bg">
                                         <svg class="d-none d-md-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="solid" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
                                             <polygon points="5 3 19 12 5 21 5 3"></polygon>
                                         </svg>
                                         <svg class="flex-none d-md-none" width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M14.375 9L0.312499 17.119L0.3125 0.881011L14.375 9Z" fill="#401B0A"/>
-                                            </svg>       
-                                    </button>    
+                                            </svg>                                                                               
+                                    </button>
                                 </a>
                             </div>
                             <img src="./assets/limon.png" class="limon-img d-none d-md-flex d-lg-none">
@@ -385,11 +388,11 @@
                             </div>
                             <div class="col-lg-8 col-md-5">
                                 <div class="d-flex justify-content-start pt-lg-50 pt-md-40 pb-md-40 pt-30 pb-30">
-                                    <button class="btn whatsapp-btn">
-                                        <a href="#" class="text-decoration-none">
+                                    <a href="https://wa.me/524772213385" class="text-decoration-none">
+                                        <button class="btn whatsapp-btn">
                                             Mandar mensaje a WhatsApp
-                                        </a>
-                                    </button>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-md-5"></div>
@@ -398,37 +401,27 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid px-15 px-md-30 px-lg-50 px-15 ciudades-container overflow-hidden">
-            <div class="swiperCiudades" id="swiper-ciudades-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h2>León</h2>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>Irapuato</h2>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>Guanajuato</h2>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>Salamanca</h2>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>Silao</h2>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>Lagos</h2>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>San Pancho</h2>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>Purísima</h2>
-                    </div>
-                </div>
-
-                <!-- dentro de transform -> translate -100% transform 3000ms keyframe carrusel css  -->
-            </div>    
+        <div class="container-fluid ciudades-slider overflow-hidden">
+            <div class="ciudades-container">
+                <h2 class="ciudad-slide">León</h2>
+                <h2 class="ciudad-slide">Irapuato</h2>
+                <h2 class="ciudad-slide">Guanajuato</h2>
+                <h2 class="ciudad-slide">Salamanca</h2>
+                <h2 class="ciudad-slide">Silao</h2>
+                <h2 class="ciudad-slide">Lagos</h2>
+                <h2 class="ciudad-slide">San Pancho</h2>
+                <h2 class="ciudad-slide">Purísima</h2>
+            </div>
+            <div class="ciudades-container">
+                <h2 class="ciudad-slide">León</h2>
+                <h2 class="ciudad-slide">Irapuato</h2>
+                <h2 class="ciudad-slide">Guanajuato</h2>
+                <h2 class="ciudad-slide">Salamanca</h2>
+                <h2 class="ciudad-slide">Silao</h2>
+                <h2 class="ciudad-slide">Lagos</h2>
+                <h2 class="ciudad-slide">San Pancho</h2>
+                <h2 class="ciudad-slide">Purísima</h2>
+            </div>
         </div>
         <div class="container-fluid px-15 px-md-30 px-lg-50 pt-md-120 pt-100">
             <div class="row">
@@ -438,7 +431,8 @@
                             <p class="pt-md-40 pt-30 pb-10 pl-md-40 pl-30">¿Dónde estamos?</p>
                             <h1 class="pl-md-40 pl-30 pb-md-60 pb-50 pr-md-40 pr-30">Te lo explica un león</h1>
                             <div class="d-flex pl-md-40 pl-30 mt-auto pb-md-40 pb-30 gap-30">
-                                <p>Facebook</p> <p>Whatsapp</p>
+                                <a href="https://www.facebook.com" class="text-decoration-none"><p>Facebook</p></a>
+                                <a href="https://wa.me/524772213385" class="text-decoration-none"><p>Whatsapp</p></a>
                             </div>
                         </div>
                     </div>
@@ -447,7 +441,7 @@
                     <div class="position-relative overflow-hidden">
                         <img src="assets\video_placeholder.png" class="w-100 h-100 object-fit-cover ubicacion-video-img">
                         <div class="d-flex justify-content-center align-items-center position-absolute top-0 w-100 h-100">
-                            <a href="#">
+                            <a href="">
                                 <button class="btn play-btn d-flex justify-content-center align-items-center">
                                     <div class="pl-10">
                                         <svg width="44" height="52" viewBox="0 0 44 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -762,6 +756,34 @@
                 </div>
             </div>
         </section>
+        <section id="home-videos">
+            <div class="video-modal d-flex justify-content-center">
+                <div class="toggle-video" data-target=".video-modal, .toggle-video" data-toggle="show"></div>
+                <div class="position-relative w-100 h-100">
+                    <div class="video-container">
+                        <video
+                            id="paquete-1"
+                            class="video-js vjs-fill"
+                            controls preload="auto"
+                            width=""
+                            height=""
+                            poster=""
+                            data-setup="{}"
+                        >
+                            <source src="./assets/videos/paquete 1.mp4" type="video/mp4" />
+                        </video>    
+                        <a data-toggle="show" data-target=".video-modal, .toggle-video">
+                            <button class="cerrar-video-btn">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L23.5 24" stroke="#401B0A" stroke-width="2"/>
+                                    <path d="M1 24L23.5 1.5" stroke="#401B0A" stroke-width="2"/>
+                                </svg>                                        
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <!-- LIBS -->
@@ -769,9 +791,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
     <!-- MAIN JS -->
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js"></script> 
     <script src="./js/swiper.js"></script>
+    <script src="./js/videojs.js"></script>
 </body>
 </html>
 

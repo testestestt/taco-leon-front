@@ -34,3 +34,16 @@ $('#select-ciudad').selectize({
   sortField: 'name'
   });
           
+
+//   document.querySelectorAll('.ul-link').forEach(link => {
+//     link.addEventListener('click', function (event) {
+//         event.preventDefault();  
+
+//         const targetSection = document.querySelector(this.getAttribute('href'));
+//         const toggleElements = document.querySelectorAll(this.dataset.target);    
+
+//         targetSection.scrollIntoView({ behavior: 'smooth' });
+
+//         toggleElements.forEach(el => el.classList.remove('show'));
+//     });
+// });
