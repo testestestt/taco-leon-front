@@ -28,11 +28,11 @@
                             </div>
                             <div class="col-12">
                                 <div class="px-30 pr-md-0 pl-lg-50 pl-md-40 pb-30 pb-md-40 pb-lg-50 ">
-                                    <a href="#home-paquetes" class="text-decoration-none">
-                                        <button class="btn paquetes-btn d-block">
+                                    <button class="btn paquetes-btn position-relative">
+                                            <a href="#home-paquetes" class="text-decoration-none position-absolute start-0 top-0 w-100 h-100">
+                                            </a>
                                             Conoce nuestros paquetes
                                         </button>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -438,10 +438,10 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="position-relative overflow-hidden">
-                        <img src="assets\video_placeholder.png" class="w-100 h-100 object-fit-cover ubicacion-video-img">
-                        <div class="d-flex justify-content-center align-items-center position-absolute top-0 w-100 h-100">
-                            <a href="">
+                    <a class="w-100 h-100" data-toggle="show" data-target=".video-modal, .toggle-video">
+                        <div class="position-relative overflow-hidden">
+                            <img src="assets\video_placeholder.png" class="w-100 h-100 object-fit-cover ubicacion-video-img">
+                            <div class="d-flex justify-content-center align-items-center position-absolute top-0 w-100 h-100">
                                 <button class="btn play-btn d-flex justify-content-center align-items-center">
                                     <div class="pl-10">
                                         <svg width="44" height="52" viewBox="0 0 44 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -449,9 +449,9 @@
                                         </svg>                                            
                                     </div>
                                 </button>
-                            </a>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
