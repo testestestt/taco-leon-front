@@ -17,7 +17,7 @@
                     </ul>
                 </nav>
             </div>
-            <a class="menu-button d-lg-none" data-toggle="show" data-target=".menu, .menu-button, .toggle-menu">
+            <a class="menu-button d-lg-none">
                 <div class="menu-icon">
                     <span></span>
                     <span></span>
@@ -35,8 +35,8 @@
             <a href="#home-paquetes" class="text-decoration-none d-lg-flex d-none "> 
                 Paquetes
             </a>
-            <a href="#home-contacto" class="text-decoration-none">
-                <button class="btn contact-btn">
+            <a href="#home-contacto" class="text-decoration-none contacto-anchor" data-target=".menu, .menu-button, .toggle-menu" data-toggle="show">
+                <button class="btn contacto-btn">
                     Contáctanos
                 </button>         
             </a>
@@ -49,25 +49,23 @@
 <div class="menu d-lg-none general-container position-absolute"> 
     <ul class="d-flex flex-column py-20 my-0">
         <li class="ul-item">
-            <a href="#home-paquetes" class="h2 text-decoration-none ul-link">Paquetes</a>
-            <div class="divider"></div>
-        </li>
-        <li class="ul-divider">
-        </li>
-        <li class="ul-item">
-            <a href="#home-guisados" class="h2 text-decoration-none ul-link">Guisados</a>
+            <a href="#home-paquetes" class="h2 text-decoration-none ul-link" data-target=".menu, .menu-button, .toggle-menu" data-toggle="show">Paquetes</a>
             <div class="divider"></div>
         </li>
         <li class="ul-item">
-            <a href="#home-ubicaciones" class="h2 text-decoration-none ul-link">Ubicaciones</a>
+            <a href="#home-guisados" class="h2 text-decoration-none ul-link" data-target=".menu, .menu-button, .toggle-menu" data-toggle="show">Guisados</a>
             <div class="divider"></div>
         </li>
         <li class="ul-item">
-            <a href="#home-galeria" class="h2 text-decoration-none ul-link">Galerías</a>
+            <a href="#home-ubicaciones" class="h2 text-decoration-none ul-link" data-target=".menu, .menu-button, .toggle-menu" data-toggle="show">Ubicaciones</a>
             <div class="divider"></div>
         </li>
         <li class="ul-item">
-            <a href="#home-testimonios" class="h2 text-decoration-none ul-link">Testimonios</a>
+            <a href="#home-galeria" class="h2 text-decoration-none ul-link" data-target=".menu, .menu-button, .toggle-menu" data-toggle="show">Galerías</a>
+            <div class="divider"></div>
+        </li>
+        <li class="ul-item">
+            <a href="#home-testimonios" class="h2 text-decoration-none ul-link" data-target=".menu, .menu-button, .toggle-menu" data-toggle="show">Testimonios</a>
         </li>
     </ul>
-</div>
+</div>  

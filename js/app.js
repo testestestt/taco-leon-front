@@ -3,7 +3,6 @@ $(document).ready(function () {
   $("footer").load("../partials/footer.html");
 });
 
-
 $(document).on('click', '[data-toggle="show"]', function (event) {
   event.preventDefault()
   var target = $(this).data('target')
@@ -16,7 +15,6 @@ $(document).ready(function() {
       allowEmptyOption: true
   });
 });
-
 
 $('#select-ciudad').selectize({
   options: [
@@ -34,16 +32,44 @@ $('#select-ciudad').selectize({
   sortField: 'name'
   });
           
+  $(document).on('click', '.menu-button', function (event) {
+    
+    $('.menu').toggleClass('show');
+    $('.menu-button').toggleClass('show');
+    $('.toggle-menu').toggleClass('show');
+    $('body').toggleClass('overflow-hidden');
+  });
+  
 
-//   document.querySelectorAll('.ul-link').forEach(link => {
-//     link.addEventListener('click', function (event) {
-//         event.preventDefault();  
 
-//         const targetSection = document.querySelector(this.getAttribute('href'));
-//         const toggleElements = document.querySelectorAll(this.dataset.target);    
+$(document).on('click', '.ul-link', function (event) {
+  const toggleElements = $($(this).data('target'));
+  const targetSection = $($(this).attr('href'));
 
-//         targetSection.scrollIntoView({ behavior: 'smooth' });
+  $('html, body').animate({
+    scrollTop: targetSection.offset().top
+  }, 800); 
+  
+  toggleElements.each(function() {
+      $(this).removeClass('show');
+  });
 
-//         toggleElements.forEach(el => el.classList.remove('show'));
-//     });
-// });
+  $('body').removeClass('overflow-hidden');
+
+})
+
+$(document).on('click', '.contacto-anchor', function (event) {
+  const toggleElements = $($(this).data('target'));
+  const targetSection = $($(this).attr('href'));
+
+  $('html, body').animate({
+    scrollTop: targetSection.offset().top
+  }, 1000); 
+
+  toggleElements.each(function() {
+      $(this).removeClass('show');
+  });
+
+  $('body').removeClass('overflow-hidden');
+
+})
